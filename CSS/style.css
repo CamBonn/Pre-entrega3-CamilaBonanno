@@ -54,6 +54,29 @@ span {
   font-size: 100%;
 }
 
+/* CSS DE LIBROS */
+
+.libros {
+  border: solid 2px;
+  width: 360px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+}
+.libros-1 {
+  width: 100%;
+  height: 520px;
+}
+.libros-texto1 {
+  text-align: center;
+  font-family: "Caveat", cursive;
+  margin-top: 10px;
+}
+.libros-sinopsis{
+  text-align: justify;
+  margin-top: 10px;
+  font-size: 100%;
+}
 @media (max-width: 570px){
   .ofertas__texto{
     font-size: 150%;
@@ -62,7 +85,7 @@ span {
     font-size: 150%; 
   }
    .ofertas {
-    width: 100%;
+    width: 90%;
     height: 100%;
   }
   .boton-tama{
@@ -70,6 +93,17 @@ span {
   }
   h1{
     font-size: 100%;
+  }
+  .libros{
+    width: 100%;
+    height: 100%;
+  }
+  .libros-sinopsis{
+    font-size: 90%;
+  }
+  .libros-1{
+    width: 100%;
+    height: 400px;
   }
 }
 @media (max-width: 410px){
@@ -80,8 +114,8 @@ span {
     font-size: 100%;
   }
   .boton-tama{
-    width: 50%;
-    height: 10%;
+    width: 30%;
+    height: 5%;
   }
 }
 @media(max-width:270px){
@@ -98,82 +132,10 @@ span {
   .precio{
     font-size: 80%;
   }
- 
-}
-/* CSS DE LIBROS */
-
-.grilla {
-  display: grid;
-  grid-template-columns: repeat(4 1fr);
-  grid-template-rows: repeat(3 900px);
-  grid-template-areas:
-    "libro1 libro2 libro3 libro4"
-    "libro5 libro6 libro7 libro8"
-    "libro9 libro10 libro11 libro12";
-}
-.orden1 {
-  grid-area: libro1;
-}
-.orden2 {
-  grid-area: libro2;
-}
-.orden3 {
-  grid-area: libro3;
-}
-.orden4 {
-  grid-area: libro4;
-}
-.orden5 {
-  grid-area: libro5;
-}
-.orden6 {
-  grid-area: libro6;
-}
-.orden7 {
-  grid-area: libro7;
-}
-.orden8 {
-  grid-area: libro8;
-}
-.orden9 {
-  grid-area: libro9;
-}
-.orden10 {
-  grid-area: libro10;
-}
-.orden11 {
-  grid-area: libro11;
-}
-.orden12 {
-  grid-area: libro12;
-}
-
-.libros {
-  border: solid 2px;
-  width: 400px;
-  background-color: white;
-  border-radius: 8px;
-  padding: 25px;
-  margin: 10px;
-}
-.libros-1 {
-  width: 100%;
-  height: 520px;
-}
-.libros-texto1 {
-  text-align: center;
-  font-family: "Caveat", cursive;
-  margin-top: 10px;
-}
-.libros-sinopsis1 {
-  text-align: justify;
-  font-family: "Times New Roman", Times, serif;
-  margin-top: 10px;
-}
-
-.libros-boton {
-  font-size: 25px;
-  margin-top: 15px;
+  .boton-tama{
+    width: 60%;
+    height: 5%;
+  }
 }
 
 /* CSS DE AGENDAS */
@@ -193,7 +155,7 @@ span {
   font-family: "Caveat", cursive;
 }
 .agendas-sinopsis1 {
-  font-family: "Times New Roman", Times, serif;
+  
 }
 /* CSS DE NOSOTOROS */
 
@@ -225,3 +187,4 @@ span {
   background-color: white;
   width: 600px;
 }
+
