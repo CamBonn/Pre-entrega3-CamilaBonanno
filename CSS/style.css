@@ -76,6 +76,39 @@ span {
   text-align: justify;
   margin-top: 10px;
   font-size: 100%;
+  font-family: 'Crimson Text', serif;
+}
+
+/* CSS DE AGENDAS */
+
+.agendas {
+  border: solid 2px;
+  width: 400px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+}
+.agendas-1 {
+  width: 100%;
+}
+.agendas-texto1 {
+  font-family: "Caveat", cursive;
+}
+.agendas-sinopsis1 {
+  font-family: 'Crimson Text', serif;
+}
+@media(max-width:1700px){
+  .ofertas{
+    width: 100%;
+  }
+}
+@media(max-width:1200px){
+  .agendas{
+    width: 100%;
+  }
+  .libros{
+    width: 100%;
+  }
 }
 @media (max-width: 570px){
   .ofertas__texto{
@@ -88,9 +121,7 @@ span {
     width: 90%;
     height: 100%;
   }
-  .boton-tama{
-    font-size: 50%;
-  }
+
   h1{
     font-size: 100%;
   }
@@ -113,10 +144,7 @@ span {
   .precio{
     font-size: 100%;
   }
-  .boton-tama{
-    width: 30%;
-    height: 5%;
-  }
+
 }
 @media(max-width:270px){
   .ofertas__foto{
@@ -132,31 +160,9 @@ span {
   .precio{
     font-size: 80%;
   }
-  .boton-tama{
-    width: 60%;
-    height: 5%;
-  }
+
 }
 
-/* CSS DE AGENDAS */
-
-.agendas {
-  border: solid 2px;
-  width: 400px;
-  background-color: white;
-  border-radius: 8px;
-  padding: 25px;
-  margin: 10px;
-}
-.agendas-1 {
-  width: 100%;
-}
-.agendas-texto1 {
-  font-family: "Caveat", cursive;
-}
-.agendas-sinopsis1 {
-  
-}
 /* CSS DE NOSOTOROS */
 
 .libreria {
