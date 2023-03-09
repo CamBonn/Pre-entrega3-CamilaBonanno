@@ -1,0 +1,23 @@
+.ofertas {
+  border: solid 2px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  width: 550px;
+  height: 750px;
+
+  .ofertas__foto {
+    height: 70%;
+    width: 100%;
+  }
+  .ofertas__texto {
+    text-align: center;
+    font-weight: bold;
+    font-family: "Caveat", cursive;
+    font-size: 250%;
+  }
+ 
+  .boton-tama {
+    font-size: 100%;
+  }
+}

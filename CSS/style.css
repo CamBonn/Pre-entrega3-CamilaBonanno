@@ -1,31 +1,37 @@
-/* CSS DE ESTIQUETAS PARA TODAS LAS PAGINAS */
 * {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
 }
+
 h1 {
   font-family: "Caveat", cursive;
   font-size: 50px;
   text-align: center;
 }
+
 span {
   font-weight: bold;
   color: black;
 }
+
 .enviosGratis {
   background-color: #766aaa;
   text-align: center;
   font-size: 1.4rem;
 }
-/* CSS DEL HEADER */
+
 .logo {
   height: 10rem;
   width: 10rem;
   background-color: #bae9eb;
 }
 
-/* CSS DE LAS OFERTAS DE LIBROS */
+.precio {
+  text-align: right;
+  font-weight: bold;
+  font-size: 2rem;
+}
 
 .ofertas {
   border: solid 2px;
@@ -35,26 +41,19 @@ span {
   width: 550px;
   height: 750px;
 }
-.ofertas__foto {
+.ofertas .ofertas__foto {
   height: 70%;
   width: 100%;
 }
-.ofertas__texto {
+.ofertas .ofertas__texto {
   text-align: center;
   font-weight: bold;
   font-family: "Caveat", cursive;
   font-size: 250%;
 }
-.precio {
-  text-align: right;
-  font-weight: bold;
-  font-size: 2rem;
-}
-.boton-tama{
+.ofertas .boton-tama {
   font-size: 100%;
 }
-
-/* CSS DE LIBROS */
 
 .libros {
   border: solid 2px;
@@ -63,23 +62,21 @@ span {
   border-radius: 8px;
   padding: 10px;
 }
-.libros-1 {
+.libros .libros-1 {
   width: 100%;
   height: 520px;
 }
-.libros-texto1 {
+.libros .libros-texto1 {
   text-align: center;
   font-family: "Caveat", cursive;
   margin-top: 10px;
 }
-.libros-sinopsis{
+.libros .libros-sinopsis {
   text-align: justify;
   margin-top: 10px;
   font-size: 100%;
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
 }
-
-/* CSS DE AGENDAS */
 
 .agendas {
   border: solid 2px;
@@ -88,82 +85,20 @@ span {
   border-radius: 8px;
   padding: 20px;
 }
-.agendas-1 {
+.agendas .agendas-1 {
   width: 100%;
 }
-.agendas-texto1 {
+.agendas .agendas-texto1 {
   font-family: "Caveat", cursive;
 }
-.agendas-sinopsis1 {
-  font-family: 'Crimson Text', serif;
-}
-@media(max-width:1700px){
-  .ofertas{
-    width: 100%;
-  }
-}
-@media(max-width:1200px){
-  .agendas{
-    width: 100%;
-  }
-  .libros{
-    width: 100%;
-  }
-}
-@media (max-width: 570px){
-  .ofertas__texto{
-    font-size: 150%;
-  }
-  .precio{
-    font-size: 150%; 
-  }
-   .ofertas {
-    width: 90%;
-    height: 100%;
-  }
-
-  h1{
-    font-size: 100%;
-  }
-  .libros{
-    width: 100%;
-    height: 100%;
-  }
-  .libros-sinopsis{
-    font-size: 90%;
-  }
-  .libros-1{
-    width: 100%;
-    height: 400px;
-  }
-}
-@media (max-width: 410px){
-  .ofertas__texto{
-    font-size: 100%;
-  }
-  .precio{
-    font-size: 100%;
-  }
-
-}
-@media(max-width:270px){
-  .ofertas__foto{
-    height: 50%;
-  }
-    .logo{
-    width: 80%;
-    height: 80%;
-  }
-    .ofertas__texto{
-    font-size: 80%;
-  }
-  .precio{
-    font-size: 80%;
-  }
-
+.agendas .agendas-sinopsis1 {
+  font-family: "Crimson Text", serif;
 }
 
-/* CSS DE NOSOTOROS */
+.formulario {
+  background-color: white;
+  width: 600px;
+}
 
 .libreria {
   border: solid 2px;
@@ -174,23 +109,82 @@ span {
   padding: 10px 15px 0px 10px;
   margin: 10px;
 }
-
-.libreria-1 {
+.libreria .libreria-1 {
   width: 50%;
   height: 50%;
 }
-.libreria-2 {
+.libreria .libreria-2 {
   width: 50%;
   height: 50%;
 }
-.libreria.texto1 {
+.libreria .libreria.texto1 {
   text-align: right;
 }
 
-/* CSS DE ENVIOS */
-
-.formulario {
-  background-color: white;
-  width: 600px;
+@media (max-width: 1700px) {
+  .ofertas {
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .ofertas {
+    width: 100%;
+  }
+  .agendas {
+    width: 100%;
+  }
+  .libros {
+    width: 100%;
+  }
+}
+@media (max-width: 570px) {
+  .ofertas__texto {
+    font-size: 150%;
+  }
+  .precio {
+    font-size: 150%;
+  }
+  .ofertas {
+    width: 90%;
+    height: 100%;
+  }
+  h1 {
+    font-size: 100%;
+  }
+  .libros {
+    width: 100%;
+    height: 100%;
+  }
+  .libros-sinopsis {
+    font-size: 90%;
+  }
+  .libros-1 {
+    width: 100%;
+    height: 400px;
+  }
+}
+@media (max-width: 410px) {
+  .ofertas__texto {
+    font-size: 100%;
+  }
+  .precio {
+    font-size: 100%;
+  }
+}
+@media (max-width: 270px) {
+  .ofertas__foto {
+    height: 50%;
+  }
+  .logo {
+    width: 80%;
+    height: 80%;
+  }
+  .ofertas__texto {
+    font-size: 80%;
+  }
+  .precio {
+    font-size: 80%;
+  }
 }
 
+/*# sourceMappingURL=style.css.map */

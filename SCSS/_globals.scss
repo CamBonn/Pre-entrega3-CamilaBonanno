@@ -1,0 +1,29 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+h1 {
+  font-family: "Caveat", cursive;
+  font-size: 50px;
+  text-align: center;
+}
+span {
+  font-weight: bold;
+  color: black;
+}
+.enviosGratis {
+  background-color: #766aaa;
+  text-align: center;
+  font-size: 1.4rem;
+}
+.logo {
+  height: 10rem;
+  width: 10rem;
+  background-color: #bae9eb;
+}
+.precio {
+  text-align: right;
+  font-weight: bold;
+  font-size: 2rem;
+}
