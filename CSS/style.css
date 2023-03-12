@@ -36,13 +36,13 @@ span {
 .ofertas {
   border: solid 2px;
   background-color: white;
-  padding: 25px;
+  padding: 10px;
   border-radius: 8px;
   width: 550px;
-  height: 750px;
+  margin-bottom: 10px;
 }
 .ofertas .ofertas__foto {
-  height: 70%;
+  height: 520px;
   width: 100%;
 }
 .ofertas .ofertas__texto {
@@ -51,18 +51,24 @@ span {
   font-family: "Caveat", cursive;
   font-size: 250%;
 }
+.ofertas .ofertas__texto1 {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Caveat", cursive;
+  font-size: 230%;
+}
 .ofertas .boton-tama {
   font-size: 100%;
 }
 
 .libros {
   border: solid 2px;
-  width: 360px;
   background-color: white;
-  border-radius: 8px;
   padding: 10px;
+  border-radius: 8px;
+  width: 360px;
 }
-.libros .libros-1 {
+.libros .libros-foto {
   width: 100%;
   height: 520px;
 }
@@ -221,21 +227,6 @@ span {
   }
   .precio {
     font-size: 100%;
-  }
-}
-@media (max-width: 270px) {
-  .ofertas__foto {
-    height: 50%;
-  }
-  .logo {
-    width: 80%;
-    height: 80%;
-  }
-  .ofertas__texto {
-    font-size: 80%;
-  }
-  .precio {
-    font-size: 80%;
   }
 }
 

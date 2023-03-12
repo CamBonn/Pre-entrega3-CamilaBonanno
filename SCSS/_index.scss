@@ -1,20 +1,27 @@
 .ofertas {
   border: solid 2px;
   background-color: white;
-  padding: 25px;
+  padding: 10px;
   border-radius: 8px;
   width: 550px;
-  height: 750px;
+  margin-bottom: 10px;
 
   .ofertas__foto {
-    height: 70%;
+    height: 520px;
     width: 100%;
   }
+
   .ofertas__texto {
     text-align: center;
     font-weight: bold;
     font-family: "Caveat", cursive;
     font-size: 250%;
+  }
+  .ofertas__texto1 {
+    text-align: center;
+    font-weight: bold;
+    font-family: "Caveat", cursive;
+    font-size: 230%;
   }
  
   .boton-tama {
