@@ -97,7 +97,59 @@ span {
 
 .formulario {
   background-color: white;
-  width: 600px;
+}
+.formulario .formulario_titulo {
+  text-align: center;
+  font-family: "Caveat", cursive;
+  font-size: 250%;
+}
+.formulario .formulario_datos {
+  font-family: "Crimson Text", serif;
+  margin: 5px;
+}
+.formulario .formulario_datos .modificacion {
+  display: inline;
+  margin-right: 5px;
+}
+.formulario .formulario_datos .modificacion1 {
+  display: inline;
+  margin-left: 100px;
+  margin-right: 5px;
+}
+
+.aclaraciones {
+  border: 2px solid;
+  margin-bottom: 20px;
+}
+.aclaraciones .aclaraciones_titulo {
+  text-align: center;
+  font-family: "Caveat", cursive;
+  font-size: 250%;
+}
+.aclaraciones .aclaraciones_texto {
+  text-align: center;
+  font-family: "Crimson Text", serif;
+  font-size: 120%;
+}
+.aclaraciones .aclaraciones_foto {
+  height: 300px;
+  width: 300px;
+  margin-bottom: 10px;
+  margin-left: 3px;
+}
+
+.terminos {
+  border-top: 2px solid;
+}
+.terminos .terminos_titulo {
+  text-align: center;
+  font-family: "Caveat";
+  font-size: 300%;
+}
+.terminos .terminos_text {
+  text-align: justify;
+  font-family: "Crimson Text", serif;
+  font-size: 100%;
 }
 
 .libreria {
@@ -139,10 +191,10 @@ span {
 }
 @media (max-width: 570px) {
   .ofertas__texto {
-    font-size: 150%;
+    font-size: 100%;
   }
   .precio {
-    font-size: 150%;
+    font-size: 130%;
   }
   .ofertas {
     width: 90%;

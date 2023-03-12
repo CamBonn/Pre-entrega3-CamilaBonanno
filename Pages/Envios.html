@@ -4,12 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
     <link rel="stylesheet" href="../CSS/style.css" />
+    <!-- FAVICON -->
     <link rel="shortcut icon" href="../Img/icono.png" type="image/x-icon" />
+    <!-- FUENTES -->
     <link
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Crimson+Text&family=Solitreo&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
@@ -69,7 +73,7 @@
                 <a class="nav-link" href="../Pages/nosotros.html">Nosotros</a>
               </li>
             </ul>
-            <form class="d-flex" role="buscar">
+            <form class="d-flex" role="Buscar">
               <input
                 class="form-control me-2"
                 type="buscar"
@@ -92,25 +96,41 @@
         <h1>ENVIOS</h1>
       </section>
       <section class="row">
-        <div class="col-md-6 col-xs-12">
+        <div class="col-md-6 col-xs-12 ">
           <form class="formulario" action="">
             <fieldset>
-              <legend>ENVIOS</legend>
+              <legend class="formulario_titulo">ENVIOS</legend>
               <div>
-                <label for="nombre">Nombre/es</label>
-                <input type="text" name="nombre" />
+                <label class="formulario_datos" for="nombre">Nombre/es</label>
+                <input
+                  class="formulario_datos"
+                  type="text"
+                  name="nombre"
+                  placeholder="Nombre/es"
+                />
+                <label class="formulario_datos" for="apellido">Apellido</label>
+                <input
+                  class="formulario_datos"
+                  type="text"
+                  name="apellido"
+                  placeholder="Apellido"
+                />
+              </div>
+              <div class="formulario_datos">
+              <div class="modificacion">Envio a domicilio</div>
+              <input type="radio" name="como" value="domicilio" />
+              <div class="modificacion1">Retiro por sucursal</div>
+              <input type="radio" name="como" value="sucursal" />
               </div>
               <div>
-                <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" />
-              </div>
-              <div>Envio a domicilio</div>
-              <input type="radio" name="como?" value="domicilio" />
-              <div>Retiro por sucursal</div>
-              <input type="radio" name="como?" value="sucursal" />
-              <div>
-                <label for="provincia">Provincia</label>
-                <select name="provincia" id="provincia">
+                <label class="formulario_datos" for="provincia"
+                  >Provincia</label
+                >
+                <select
+                  class="formulario_datos"
+                  name="provincia"
+                  id="provincia"
+                >
                   <option value="buenosaires">Buenos Aires</option>
                   <option value="catamarca">Catamarca</option>
                   <option value="chaco">Chaco</option>
@@ -135,27 +155,53 @@
                   <option value="tierradelfuego">Tierra Del Fruego</option>
                   <option value="tucuman">Tucuman</option>
                 </select>
-                <label for="ciudad">Ciudad</label>
-                <input type="text" name="ciudad" />
+                <label class="formulario_datos" for="ciudad">Ciudad</label>
+                <input
+                  class="formulario_datos"
+                  type="text"
+                  name="ciudad"
+                  placeholder="Ciudad"
+                />
               </div>
               <div>
-                <label for="direccion">Direccion</label>
-                <input type="text" name="direccion" />
-                <label for="altura">Altura</label>
-                <input type="number" name="altura" />
+                <label class="formulario_datos" for="direccion"
+                  >Direccion</label
+                >
+                <input
+                  class="formulario_datos"
+                  type="text"
+                  name="direccion"
+                  placeholder="Direccion"
+                />
+                <label class="formulario_datos" for="numero">Numero</label>
+                <input
+                  class="formulario_datos"
+                  type="number"
+                  name="numero"
+                  placeholder="Numero"
+                />
               </div>
               <div>
-                <label for="aclaracion">Aclaracion</label>
-                <textarea name="aclaracion" id="" cols="30" rows="5"></textarea>
+                <label class="formulario_datos" for="aclaracion">Aclaracion</label>
+                <textarea
+                  class="formulario_datos"
+                  name="aclaracion"
+                  id=""
+                  cols="30"
+                  rows="5"
+                  placeholder="Aclaraciones para el envio"
+                ></textarea>
               </div>
-              <div>Acepta los terminos y condiciones</div>
-              <input type="checkbox" name="acepta" />
+              <div class="formulario_datos">
+                Acepta los terminos y condiciones
+              <input type="checkbox" name="acepta"  />
+              </div>
             </fieldset>
           </form>
         </div>
-        <div class="col-md-6 col-xs-12">
-          <h2>ACLARACIONES DE ENVIO</h2>
-          <p>
+        <div class="col-md-6 col-xs-12 aclaraciones">
+          <h2 class="aclaraciones_titulo">ACLARACIONES DE ENVIO</h2>
+          <p class="aclaraciones_texto">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit,
             distinctio magnam repellat unde illo error consequuntur aliquam ad
             deserunt quo adipisci iure officia ipsum dolorum inventore. Vero
@@ -168,6 +214,39 @@
             tempora hic cum iure facilis sint voluptate voluptatum mollitia
             beatae impedit nihil, minus dolorum quos quas ducimus sunt quisquam.
             Quod, unde.
+          </p>
+          <img
+            class="aclaraciones_foto"
+            src="../Img/Envios/andreaniRojo.png"
+            alt="andreani"
+          />
+          <img class="aclaraciones_foto" src="../Img/Envios/oca.png" alt="oca" />
+          <img
+            class="aclaraciones_foto"
+            src="../Img/Envios/unnamed.png"
+            alt="correo argentino"
+          />
+        </div>
+        <div class="terminos">
+          <h3 class="terminos_titulo">Terminos y condiciones</h3>
+          <p class="terminos_text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident
+            reprehenderit, voluptas hic voluptates optio nisi, quaerat adipisci,
+            facilis qui harum aut sint repellendus consequuntur tempora in
+            commodi officia vero accusantium minima exercitationem sit error at!
+            Corporis dignissimos, sunt libero aut repellendus perspiciatis odit
+            pariatur minus maxime ipsam deserunt alias a expedita quibusdam
+            tempora quos nisi porro. Aspernatur atque iusto fugit obcaecati
+            ipsam corporis magni, sit ducimus nihil optio nemo! Minus at aperiam
+            incidunt dolorem libero, et, aliquid natus, excepturi minima quia
+            provident quo in maiores debitis aut amet harum consequatur quasi
+            mollitia commodi fuga perferendis quas ipsam sequi. Odit,
+            exercitationem. Corrupti culpa asperiores amet. Recusandae accusamus
+            repudiandae voluptatum natus dolorem rem nobis reprehenderit officia
+            saepe repellat? Temporibus at rerum ut quo quaerat! Necessitatibus
+            exercitationem molestias voluptatibus repellat blanditiis nesciunt
+            similique fugiat, at porro facilis rem quo in quis quia modi libero
+            eaque quisquam. Dolores molestias sunt aliquid beatae modi numquam.
           </p>
         </div>
       </section>

@@ -1,6 +1,59 @@
+
 .formulario {
   background-color: white;
-  width: 600px;
+
+  .formulario_titulo {
+    text-align: center;
+    font-family: "Caveat", cursive;
+    font-size: 250%;
+  }
+  .formulario_datos {
+    font-family: "Crimson Text", serif;
+    margin: 5px;
+    .modificacion {
+      display: inline;
+      margin-right: 5px;
+    }
+    .modificacion1 {
+      display: inline;
+      margin-left: 100px;
+      margin-right: 5px;
+    }
+
+  }
+}
+.aclaraciones {
+  border: 2px solid;
+  margin-bottom: 20px;
+  .aclaraciones_titulo {
+    text-align: center;
+    font-family: "Caveat", cursive;
+    font-size: 250%;
+  }
+  .aclaraciones_texto {
+    text-align: center;
+    font-family: "Crimson Text", serif;
+    font-size: 120%;
+  }
+  .aclaraciones_foto {
+    height: 300px;
+    width: 300px;
+    margin-bottom: 10px;
+    margin-left: 3px;
+  }
+}
+.terminos {
+  border-top: 2px solid;
+  .terminos_titulo {
+    text-align: center;
+    font-family: "Caveat";
+    font-size: 300%;
+  }
+  .terminos_text {
+    text-align: justify;
+    font-family: "Crimson Text", serif;
+    font-size: 100%;
+  }
 }
 .libreria {
   border: solid 2px;
