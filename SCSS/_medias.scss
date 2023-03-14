@@ -2,6 +2,19 @@
   .ofertas {
     width: 100%;
   }
+  .libros {
+    width: 100%;
+  }
+  .agendas {
+    width: 100%;
+  }
+  .libreria {
+    width: 100%;
+    .libreria_foto {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 @media (max-width: 1200px) {
   .ofertas {
@@ -15,6 +28,11 @@
   }
 }
 @media (max-width: 570px) {
+/* MEDIA GLOBALS */
+ h1 {
+    font-size: 100%;
+  }
+/* MEDIA DE INDEX */
   .ofertas__texto {
     font-size: 100%;
   }
@@ -25,10 +43,7 @@
     width: 90%;
     height: 100%;
   }
-
-  h1 {
-    font-size: 100%;
-  }
+  /* MEDIA DE LIBROS */
   .libros {
     width: 100%;
     height: 100%;
@@ -40,6 +55,27 @@
     width: 100%;
     height: 400px;
   }
+  /* MEDIA DE NOSOTROS */
+  .libreria {
+    width: 100%;
+    .libreria_acomodar {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "caja1 "
+        "caja2"
+        "caja4"
+        "caja3 ";
+    }
+    .libreria_foto {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .contacto {
+    .contacto_info {
+      font-size: 150%;
+    }
+  }
 }
 @media (max-width: 410px) {
   .ofertas__texto {
@@ -48,5 +84,26 @@
   .precio {
     font-size: 100%;
   }
-}
 
+  .libreria {
+    .libreria_texto {
+      font-size: 100%;
+    }
+    .libreria_foto {
+      width: 100%;
+      height: 100%;
+    }
+    .libreria_texto1 {
+      font-size: 100%;
+    }
+    .libreria_foto1 {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .contacto {
+    .contacto_info {
+      font-size: 150%;
+    }
+  }
+}

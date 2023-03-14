@@ -1,3 +1,5 @@
+$fuente-titulos: "Caveat";
+$fuente-encabezado: "Crimson Text", serif;
 
 .formulario {
   background-color: white;
@@ -19,7 +21,6 @@
       margin-left: 100px;
       margin-right: 5px;
     }
-
   }
 }
 .aclaraciones {
@@ -27,12 +28,12 @@
   margin-bottom: 20px;
   .aclaraciones_titulo {
     text-align: center;
-    font-family: "Caveat", cursive;
+    font-family: $fuente-titulos;
     font-size: 250%;
   }
   .aclaraciones_texto {
     text-align: center;
-    font-family: "Crimson Text", serif;
+    font-family: $fuente-encabezado;
     font-size: 120%;
   }
   .aclaraciones_foto {
@@ -46,33 +47,61 @@
   border-top: 2px solid;
   .terminos_titulo {
     text-align: center;
-    font-family: "Caveat";
+    font-family: $fuente-titulos;
     font-size: 300%;
   }
   .terminos_text {
     text-align: justify;
-    font-family: "Crimson Text", serif;
+    font-family: $fuente-encabezado;
     font-size: 100%;
   }
 }
-.libreria {
-  border: solid 2px;
-  width: 1300px;
-  height: 1300px;
-  background-color: white;
-  border-radius: 8px;
-  padding: 10px 15px 0px 10px;
-  margin: 10px;
 
-  .libreria-1 {
-    width: 50%;
-    height: 50%;
+/* NOSOTROS */
+.libreria {
+  border: 3px solid;
+  margin-bottom: 10px;
+  padding: 10px;
+  .libreria_titulo {
+    font-family: $fuente-titulos;
+    text-align: center;
+    font-size: 250%;
   }
-  .libreria-2 {
-    width: 50%;
-    height: 50%;
+  .libreria_acomodar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "caja1 caja2"
+      "caja3 caja4";
+
+    .libreria_foto1 {
+      height: 500px;
+      border: 1px solid;
+      margin: 10px;
+      grid-area: caja1;
+    }
+    .libreria_texto1 {
+      font-family: $fuente-encabezado;
+      font-size: larger;
+      grid-area: caja2;
+    }
+
+    .libreria_texto {
+      font-family: $fuente-encabezado;
+      font-size: larger;
+      grid-area: caja3;
+    }
+    .libreria_foto {
+      height: 500px;
+      border: 1px solid;
+      margin: 10px;
+      grid-area: caja4;
+    }
   }
-  .libreria.texto1 {
-    text-align: right;
+}
+.contacto {
+  .contacto_info {
+    font-size: 300%;
+    font-family: $fuente-encabezado;
   }
 }

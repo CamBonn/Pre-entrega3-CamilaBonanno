@@ -5,20 +5,22 @@
 }
 
 h1 {
-  font-family: "Caveat", cursive;
+  font-family: "Caveat";
   font-size: 50px;
   text-align: center;
-}
-
-span {
-  font-weight: bold;
-  color: black;
 }
 
 .enviosGratis {
   background-color: #766aaa;
   text-align: center;
   font-size: 1.4rem;
+}
+.enviosGratis p {
+  color: black;
+}
+.enviosGratis span {
+  font-weight: bold;
+  color: black;
 }
 
 .logo {
@@ -48,13 +50,13 @@ span {
 .ofertas .ofertas__texto {
   text-align: center;
   font-weight: bold;
-  font-family: "Caveat", cursive;
+  font-family: "Caveat";
   font-size: 250%;
 }
 .ofertas .ofertas__texto1 {
   text-align: center;
   font-weight: bold;
-  font-family: "Caveat", cursive;
+  font-family: "Caveat";
   font-size: 230%;
 }
 .ofertas .boton-tama {
@@ -67,8 +69,9 @@ span {
   padding: 10px;
   border-radius: 8px;
   width: 360px;
+  margin-bottom: 10px;
 }
-.libros .libros-foto {
+.libros .libros-1 {
   width: 100%;
   height: 520px;
 }
@@ -90,12 +93,17 @@ span {
   background-color: white;
   border-radius: 8px;
   padding: 20px;
+  margin-bottom: 10px;
 }
 .agendas .agendas-1 {
   width: 100%;
 }
 .agendas .agendas-texto1 {
   font-family: "Caveat", cursive;
+}
+.agendas .agendas-texto2 {
+  font-family: "Caveat", cursive;
+  font-size: 190%;
 }
 .agendas .agendas-sinopsis1 {
   font-family: "Crimson Text", serif;
@@ -129,7 +137,7 @@ span {
 }
 .aclaraciones .aclaraciones_titulo {
   text-align: center;
-  font-family: "Caveat", cursive;
+  font-family: "Caveat";
   font-size: 250%;
 }
 .aclaraciones .aclaraciones_texto {
@@ -158,30 +166,66 @@ span {
   font-size: 100%;
 }
 
+/* NOSOTROS */
 .libreria {
-  border: solid 2px;
-  width: 1300px;
-  height: 1300px;
-  background-color: white;
-  border-radius: 8px;
-  padding: 10px 15px 0px 10px;
+  border: 3px solid;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.libreria .libreria_titulo {
+  font-family: "Caveat";
+  text-align: center;
+  font-size: 250%;
+}
+.libreria .libreria_acomodar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "caja1 caja2" "caja3 caja4";
+}
+.libreria .libreria_acomodar .libreria_foto1 {
+  height: 500px;
+  border: 1px solid;
   margin: 10px;
+  grid-area: caja1;
 }
-.libreria .libreria-1 {
-  width: 50%;
-  height: 50%;
+.libreria .libreria_acomodar .libreria_texto1 {
+  font-family: "Crimson Text", serif;
+  font-size: larger;
+  grid-area: caja2;
 }
-.libreria .libreria-2 {
-  width: 50%;
-  height: 50%;
+.libreria .libreria_acomodar .libreria_texto {
+  font-family: "Crimson Text", serif;
+  font-size: larger;
+  grid-area: caja3;
 }
-.libreria .libreria.texto1 {
-  text-align: right;
+.libreria .libreria_acomodar .libreria_foto {
+  height: 500px;
+  border: 1px solid;
+  margin: 10px;
+  grid-area: caja4;
+}
+
+.contacto .contacto_info {
+  font-size: 300%;
+  font-family: "Crimson Text", serif;
 }
 
 @media (max-width: 1700px) {
   .ofertas {
     width: 100%;
+  }
+  .libros {
+    width: 100%;
+  }
+  .agendas {
+    width: 100%;
+  }
+  .libreria {
+    width: 100%;
+  }
+  .libreria .libreria_foto {
+    width: 100%;
+    height: 100%;
   }
 }
 @media (max-width: 1200px) {
@@ -196,6 +240,11 @@ span {
   }
 }
 @media (max-width: 570px) {
+  /* MEDIA GLOBALS */
+  h1 {
+    font-size: 100%;
+  }
+  /* MEDIA DE INDEX */
   .ofertas__texto {
     font-size: 100%;
   }
@@ -206,9 +255,7 @@ span {
     width: 90%;
     height: 100%;
   }
-  h1 {
-    font-size: 100%;
-  }
+  /* MEDIA DE LIBROS */
   .libros {
     width: 100%;
     height: 100%;
@@ -220,6 +267,21 @@ span {
     width: 100%;
     height: 400px;
   }
+  /* MEDIA DE NOSOTROS */
+  .libreria {
+    width: 100%;
+  }
+  .libreria .libreria_acomodar {
+    grid-template-columns: 1fr;
+    grid-template-areas: "caja1 " "caja2" "caja4" "caja3 ";
+  }
+  .libreria .libreria_foto {
+    width: 100%;
+    height: 100%;
+  }
+  .contacto .contacto_info {
+    font-size: 150%;
+  }
 }
 @media (max-width: 410px) {
   .ofertas__texto {
@@ -227,6 +289,23 @@ span {
   }
   .precio {
     font-size: 100%;
+  }
+  .libreria .libreria_texto {
+    font-size: 100%;
+  }
+  .libreria .libreria_foto {
+    width: 100%;
+    height: 100%;
+  }
+  .libreria .libreria_texto1 {
+    font-size: 100%;
+  }
+  .libreria .libreria_foto1 {
+    width: 100%;
+    height: 100%;
+  }
+  .contacto .contacto_info {
+    font-size: 150%;
   }
 }
 
