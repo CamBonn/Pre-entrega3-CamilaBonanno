@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+@keyframes efecto_envios {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 h1 {
   font-family: "Caveat";
   font-size: 50px;
@@ -17,8 +25,11 @@ h1 {
 }
 .enviosGratis p {
   color: black;
+  animation-name: efecto_envios;
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
 }
-.enviosGratis span {
+.enviosGratis p span {
   font-weight: bold;
   color: black;
 }
@@ -32,7 +43,7 @@ h1 {
 .precio {
   text-align: right;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 200%;
 }
 
 .ofertas {
@@ -61,6 +72,30 @@ h1 {
 }
 .ofertas .boton-tama {
   font-size: 100%;
+}
+
+/* TRANSICIONES */
+.ofertas:hover {
+  padding: 5px;
+  width: 570px;
+  height: 710px;
+  transition: all 2s;
+}
+.ofertas:hover .ofertas__texto {
+  font-size: 260%;
+  transition: all 2s;
+}
+.ofertas:hover .ofertas__texto1 {
+  font-size: 240%;
+  transition: all 2s;
+}
+.ofertas:hover .boton-tama {
+  font-size: x-large;
+  transition: all 2s;
+}
+.ofertas:hover .precio {
+  font-size: 250%;
+  transition: all 2s;
 }
 
 .libros {
@@ -131,6 +166,17 @@ h1 {
   margin-right: 5px;
 }
 
+/* ANIMACIONES ENVIOS */
+@keyframes empresas {
+  0% {
+    opacity: 0;
+    width: 20px;
+  }
+  100% {
+    opacity: 1;
+    width: 32, 5%;
+  }
+}
 .aclaraciones {
   border: 2px solid;
   margin-bottom: 20px;
@@ -150,6 +196,8 @@ h1 {
   width: 300px;
   margin-bottom: 10px;
   margin-left: 3px;
+  animation-name: empresas;
+  animation-duration: 3s;
 }
 
 .terminos {
@@ -167,6 +215,24 @@ h1 {
 }
 
 /* NOSOTROS */
+@keyframes efecto_libreria {
+  0% {
+    opacity: 0;
+    width: 20px;
+  }
+  100% {
+    opacity: 1;
+    width: 75%;
+  }
+}
+@keyframes efecto_texto {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .libreria {
   border: 3px solid;
   margin-bottom: 10px;
@@ -187,22 +253,30 @@ h1 {
   border: 1px solid;
   margin: 10px;
   grid-area: caja1;
+  animation-name: efecto_libreria;
+  animation-duration: 3s;
 }
 .libreria .libreria_acomodar .libreria_texto1 {
   font-family: "Crimson Text", serif;
   font-size: larger;
   grid-area: caja2;
+  animation-name: efecto_texto;
+  animation-duration: 4s;
 }
 .libreria .libreria_acomodar .libreria_texto {
   font-family: "Crimson Text", serif;
   font-size: larger;
   grid-area: caja3;
+  animation-name: efecto_texto;
+  animation-duration: 4s;
 }
 .libreria .libreria_acomodar .libreria_foto {
   height: 500px;
   border: 1px solid;
   margin: 10px;
   grid-area: caja4;
+  animation-name: efecto_libreria;
+  animation-duration: 3s;
 }
 
 .contacto .contacto_info {

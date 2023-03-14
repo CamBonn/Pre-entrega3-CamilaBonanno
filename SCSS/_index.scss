@@ -1,3 +1,4 @@
+
 .ofertas {
   border: solid 2px;
   background-color: white;
@@ -27,4 +28,29 @@
   .boton-tama {
     font-size: 100%;
   }
+}
+/* TRANSICIONES */
+.ofertas:hover{
+ padding: 5px;
+  width: 570px;
+  height: 710px;
+  transition: all 2s;
+  .ofertas__texto{
+    font-size: 260%;
+     transition: all 2s;
+  }
+  .ofertas__texto1{
+    font-size: 240%;
+     transition: all 2s;
+  }
+.boton-tama{
+  font-size: x-large;
+   transition: all 2s;
+}
+.precio{
+  font-size: 250%;
+   transition: all 2s;
+}
+
+  
 }

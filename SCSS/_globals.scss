@@ -5,6 +5,15 @@ $fuente-encabezado: "Crimson Text", serif;
   padding: 0%;
   box-sizing: border-box;
 }
+@keyframes efecto_envios {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 h1 {
   font-family: $fuente-titulos;
   font-size: 50px;
@@ -15,12 +24,16 @@ h1 {
   background-color: #766aaa;
   text-align: center;
   font-size: 1.4rem;
-  p{
+
+  p {
     color: black;
-  }
-  span {
-    font-weight: bold;
-    color: black;
+  animation-name: efecto_envios;
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+    span {
+      font-weight: bold;
+      color: black;
+    }
   }
 }
 .logo {
@@ -31,5 +44,5 @@ h1 {
 .precio {
   text-align: right;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 200%;
 }
