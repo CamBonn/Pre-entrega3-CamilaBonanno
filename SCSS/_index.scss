@@ -1,4 +1,3 @@
-
 .ofertas {
   border: solid 2px;
   background-color: white;
@@ -6,6 +5,10 @@
   border-radius: 8px;
   width: 550px;
   margin-bottom: 10px;
+  &:hover {
+    transform: scale(1.05);
+    transition: 1s;
+  }
 
   .ofertas__foto {
     height: 520px;
@@ -24,33 +27,8 @@
     font-family: $fuente-titulos;
     font-size: 230%;
   }
- 
+
   .boton-tama {
     font-size: 100%;
   }
-}
-/* TRANSICIONES */
-.ofertas:hover{
- padding: 5px;
-  width: 570px;
-  height: 710px;
-  transition: all 2s;
-  .ofertas__texto{
-    font-size: 260%;
-     transition: all 2s;
-  }
-  .ofertas__texto1{
-    font-size: 240%;
-     transition: all 2s;
-  }
-.boton-tama{
-  font-size: x-large;
-   transition: all 2s;
-}
-.precio{
-  font-size: 250%;
-   transition: all 2s;
-}
-
-  
 }

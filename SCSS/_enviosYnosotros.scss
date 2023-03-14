@@ -31,7 +31,15 @@ $fuente-encabezado: "Crimson Text", serif;
   }
   100% {
     opacity: 1;
-    width: 32,5%;
+    width: 32, 5%;
+  }
+}
+@keyframes efecto-texto {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 .aclaraciones {
@@ -46,6 +54,8 @@ $fuente-encabezado: "Crimson Text", serif;
     text-align: center;
     font-family: $fuente-encabezado;
     font-size: 120%;
+    animation-name: efecto-texto;
+    animation-duration: 4s;
   }
   .aclaraciones_foto {
     height: 300px;
@@ -54,7 +64,6 @@ $fuente-encabezado: "Crimson Text", serif;
     margin-left: 3px;
     animation-name: empresas;
     animation-duration: 3s;
-    
   }
 }
 .terminos {
@@ -68,9 +77,10 @@ $fuente-encabezado: "Crimson Text", serif;
     text-align: justify;
     font-family: $fuente-encabezado;
     font-size: 100%;
+    animation-name: efecto-texto;
+    animation-duration: 4s;
   }
 }
-
 
 /* NOSOTROS */
 @keyframes efecto_libreria {
@@ -120,23 +130,22 @@ $fuente-encabezado: "Crimson Text", serif;
       font-size: larger;
       grid-area: caja2;
       animation-name: efecto_texto;
-      animation-duration: 4s
-
+      animation-duration: 4s;
     }
 
     .libreria_texto {
       font-family: $fuente-encabezado;
       font-size: larger;
       grid-area: caja3;
-        animation-name: efecto_texto;
-      animation-duration: 4s
+      animation-name: efecto_texto;
+      animation-duration: 4s;
     }
     .libreria_foto {
       height: 500px;
       border: 1px solid;
       margin: 10px;
       grid-area: caja4;
-       animation-name: efecto_libreria;
+      animation-name: efecto_libreria;
       animation-duration: 3s;
     }
   }

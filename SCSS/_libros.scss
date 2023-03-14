@@ -5,6 +5,10 @@
   border-radius: 8px;
   width: 360px;
   margin-bottom: 10px;
+  &:hover{
+    transform: scale(1.05);
+    transition: 1s;
+  }
   
   .libros-1 {
     width: 100%;

@@ -8,6 +8,12 @@
   0% {
     opacity: 1;
   }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
   100% {
     opacity: 0;
   }
@@ -27,7 +33,7 @@ h1 {
   color: black;
   animation-name: efecto_envios;
   animation-iteration-count: infinite;
-  animation-duration: 0.5s;
+  animation-duration: 0.9s;
 }
 .enviosGratis p span {
   font-weight: bold;
@@ -54,6 +60,10 @@ h1 {
   width: 550px;
   margin-bottom: 10px;
 }
+.ofertas:hover {
+  transform: scale(1.05);
+  transition: 1s;
+}
 .ofertas .ofertas__foto {
   height: 520px;
   width: 100%;
@@ -74,30 +84,6 @@ h1 {
   font-size: 100%;
 }
 
-/* TRANSICIONES */
-.ofertas:hover {
-  padding: 5px;
-  width: 570px;
-  height: 710px;
-  transition: all 2s;
-}
-.ofertas:hover .ofertas__texto {
-  font-size: 260%;
-  transition: all 2s;
-}
-.ofertas:hover .ofertas__texto1 {
-  font-size: 240%;
-  transition: all 2s;
-}
-.ofertas:hover .boton-tama {
-  font-size: x-large;
-  transition: all 2s;
-}
-.ofertas:hover .precio {
-  font-size: 250%;
-  transition: all 2s;
-}
-
 .libros {
   border: solid 2px;
   background-color: white;
@@ -105,6 +91,10 @@ h1 {
   border-radius: 8px;
   width: 360px;
   margin-bottom: 10px;
+}
+.libros:hover {
+  transform: scale(1.05);
+  transition: 1s;
 }
 .libros .libros-1 {
   width: 100%;
@@ -129,6 +119,10 @@ h1 {
   border-radius: 8px;
   padding: 20px;
   margin-bottom: 10px;
+}
+.agendas:hover {
+  transform: scale(1.05);
+  transition: 1s;
 }
 .agendas .agendas-1 {
   width: 100%;
@@ -177,6 +171,14 @@ h1 {
     width: 32, 5%;
   }
 }
+@keyframes efecto-texto {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .aclaraciones {
   border: 2px solid;
   margin-bottom: 20px;
@@ -190,6 +192,8 @@ h1 {
   text-align: center;
   font-family: "Crimson Text", serif;
   font-size: 120%;
+  animation-name: efecto-texto;
+  animation-duration: 4s;
 }
 .aclaraciones .aclaraciones_foto {
   height: 300px;
@@ -212,6 +216,8 @@ h1 {
   text-align: justify;
   font-family: "Crimson Text", serif;
   font-size: 100%;
+  animation-name: efecto-texto;
+  animation-duration: 4s;
 }
 
 /* NOSOTROS */

@@ -9,6 +9,12 @@ $fuente-encabezado: "Crimson Text", serif;
   0% {
     opacity: 1;
   }
+  25%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+  }
   100% {
     opacity: 0;
   }
@@ -29,7 +35,7 @@ h1 {
     color: black;
   animation-name: efecto_envios;
   animation-iteration-count: infinite;
-  animation-duration: 0.5s;
+  animation-duration: 0.9s;
     span {
       font-weight: bold;
       color: black;
