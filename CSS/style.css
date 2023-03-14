@@ -290,6 +290,11 @@ h1 {
   font-family: "Crimson Text", serif;
 }
 
+.mapa {
+  border: 2px solid;
+  background-color: white;
+}
+
 @media (max-width: 1700px) {
   .ofertas {
     width: 100%;
