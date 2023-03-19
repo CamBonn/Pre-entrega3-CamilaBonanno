@@ -27,12 +27,13 @@
     width: 100%;
   }
 }
+
 @media (max-width: 570px) {
-/* MEDIA GLOBALS */
- h1 {
-    font-size: 100%;
+  /* MEDIA GLOBALS */
+  h1 {
+    font-size: 200%;
   }
-/* MEDIA DE INDEX */
+  /* MEDIA DE INDEX */
   .ofertas__texto {
     font-size: 100%;
   }
@@ -40,7 +41,7 @@
     font-size: 130%;
   }
   .ofertas {
-    width: 90%;
+    width: 100%;
     height: 100%;
   }
   /* MEDIA DE LIBROS */
@@ -76,6 +77,14 @@
       font-size: 150%;
     }
   }
+  .mapa {
+    height: 100%;
+    width: 100%;
+    .mapa_1 {
+      height: 100%;
+      width: 100%;
+    }
+  }
 }
 @media (max-width: 410px) {
   .ofertas__texto {
@@ -104,6 +113,14 @@
   .contacto {
     .contacto_info {
       font-size: 150%;
+    }
+  }
+  .mapa {
+    height: 100%;
+    width: 100%;
+    .mapa_1 {
+      height: 100%;
+      width: 100%;
     }
   }
 }
